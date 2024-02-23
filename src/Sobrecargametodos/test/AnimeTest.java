@@ -7,13 +7,11 @@ public class AnimeTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//Instanciando obj
-		Anime anime = new Anime("Sem nome", "PC", 1200, "Ação");
+		Anime anime = new Anime("DBZ", "PC", 1200, "Ação", "Produtora não sei o nome");
 		anime.imprime();
 		
 		System.out.println("-------------------");
-		
-		Anime anime2 = new Anime();
-		anime2.imprime();
+
 		
 //		
 //		anime.init("DBZ", "PC", 1200);

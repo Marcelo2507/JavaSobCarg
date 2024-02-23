@@ -5,23 +5,31 @@ public class Anime {
 	private String tipo;
 	private int episodios;
 	private String genero;
+	private String estudio;
 	
 	
 	/*
 	 * TRABALHANDO COM CONSTRUTORES
 	 * */
+	
 	//Sobre carga de metodos
 	public Anime(String nome, String tipo, int episodios, String genero) {
-		System.out.println("Dentro do construtor");
+		this();//chamando o construtor
 		this.nome = nome;
 		this.tipo = tipo;
 		this.episodios = episodios;
 		this.genero = genero;
 	}
 	
+	public Anime(String nome, String tipo, int episodios, String genero, String estudio) {
+		this(nome, tipo, episodios, genero);//chamando o construtor
+		this.setEstudio(estudio);
+	}
+	
 	//Sobre carga de consrutores
 	public Anime() {
-		
+	//Este serve para chamada e criação de objetos no "main"
+		System.out.println("Dentro do consrutor sem argumentos");//não precisa do print
 	}
 	
 
@@ -45,22 +53,22 @@ public class Anime {
 		System.out.println(this.tipo);
 		System.out.println(this.episodios);
 		System.out.println(this.genero);
+		System.out.println(this.estudio);
 	}
-	
-	//ABRE GET/SET genero
+
+	//ABRE GET/SET
 	public String getGenero() {
 		return genero;
 	}
-
 
 	public void setGenero(String genero) {
 		this.genero = genero;
 	}
 	
-	//FECHA GET/SET genero
-
+	/****************************************************************
+	 *———————————————————————————————————————————————————————————————
+	 * **************************************************************/
 	
-	//ABRE GET/SET nome
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -69,9 +77,10 @@ public class Anime {
 		return this.nome;
 	}
 	
-	//FECHA GET/SET nome
+	/****************************************************************
+	 *———————————————————————————————————————————————————————————————
+	 * **************************************************************/
 	
-	//ABRE GET/SET tipo
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
@@ -80,9 +89,10 @@ public class Anime {
 		return this.tipo;
 	}
 	
-	//FECHA GET/SET tipo
+	/****************************************************************
+	 *———————————————————————————————————————————————————————————————
+	 * **************************************************************/
 	
-	//ABRE GET/SET episodios
 	public void setEpisodios(int episodios) {
 		this.episodios = episodios;
 	}
@@ -91,7 +101,19 @@ public class Anime {
 		return this.episodios;
 	}
 	
-	//FECHA GET/SET episodios
+	/****************************************************************
+	 *———————————————————————————————————————————————————————————————
+	 * **************************************************************/
+
+	public String getEstudio() {
+		return estudio;
+	}
+
+	public void setEstudio(String estudio) {
+		this.estudio = estudio;
+	}
+	
+	//FECHA GET/SET
 	
 	
 	
