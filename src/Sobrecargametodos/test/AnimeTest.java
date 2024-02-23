@@ -9,9 +9,13 @@ public class AnimeTest {
 		//Instanciando obj
 		Anime anime = new Anime();
 		
-		anime.setNome("Akudama drive");
-		anime.setTipo("TV");
-		anime.setEpisodios(12);
+		anime.init("DBZ", "PC", 1200);
+		
+		anime.init("Samurai", "PC", 1200, "Ação");
+		
+//		anime.setNome("Akudama drive");
+//		anime.setTipo("TV");
+//		anime.setEpisodios(12);
 		anime.imprime();
 	}
 
