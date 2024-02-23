@@ -6,27 +6,37 @@ public class Anime {
 	private int episodios;
 	private String genero;
 	
-
-
-	public void init(String nome, String tipo, int episodios) {
+	
+	/*
+	 * TRABALHANDO COM CONSTRUTORES
+	 * */
+	//Sobre carga de metodos
+	public Anime(String nome, String tipo, int episodios, String genero) {
+		System.out.println("Dentro do construtor");
 		this.nome = nome;
 		this.tipo = tipo;
 		this.episodios = episodios;
-	}
-	
-	
-	//SOBRE CARGA
-//	public void init(String nome, String tipo, int episodios, String genero) {
-//		this.nome = nome;
-//		this.tipo = tipo;
-//		this.episodios = episodios;
-//		this.genero = genero;
-//	}
-	
-	public void init(String nome, String tipo, int episodios, String genero) {
-		this.init(nome, tipo, episodios);
 		this.genero = genero;
 	}
+	
+	//Sobre carga de consrutores
+	public Anime() {
+		
+	}
+	
+
+	/*
+	 * public void init(String nome, String tipo, int episodios) { this.nome = nome;
+	 * this.tipo = tipo; this.episodios = episodios; }
+	 * 
+	 * 
+	 * //SOBRE CARGA //// public void init(String nome, String tipo, int episodios,
+	 * String genero) { //// this.nome = nome; //// this.tipo = tipo; ////
+	 * this.episodios = episodios; //// this.genero = genero; //// } // 
+	 * 
+	 * public void init(String nome, String tipo, int episodios, String genero) {
+	 * this.init(nome, tipo, episodios); this.genero = genero; }
+	 **/
 	
 	
 	//IMPREÇÃO DE VALORES
